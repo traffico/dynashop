@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="shortcut icon" href="brand-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <!-- Left: Logo -->
+      <div class="nav-left">
+        <a href="index.html" class="logo"><img width="100px" src="brand-logo.png" alt=""></a>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">        
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+      </button>
+
+      <!-- Center: Main Links -->
+      <ul class="nav-center" id="nav-center">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#product-heading">Shop</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+      </ul>
+
+      <!-- Right: Actions -->
+      <div class="nav-right">
+          <!-- <a href="">create an account</a> -->
+          <a href="cart.html" class="nav-icon"><img class="cart" src="cart4.svg" alt=""><span class="cart-count">0</span></a>
+          <div id="notification">Item added to cart!</div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="product-details" class="product-detail-section">
+      <h3 id="product-category"></h3>
+      <div id="product-gallery"></div>
+      <div id="product-info">
+        <h2 id="product-title"></h2>
+        <p id="product-description"></p>
+        <h3 id="product-price"></h3>
+        
+        <h3 id="product-rating">Rating: </h3>
+        <button id="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@DynaShop.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Market Street, Toronto, Canada</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 DynaShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+  <script src="product.js"></script>
+</body>
+</html>

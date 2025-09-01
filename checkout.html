@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - DynaShop</title>
+  <link rel="shortcut icon" href="brand-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="logo"><img width="100px" src="brand-logo.png" alt="Logo"></a>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+      </button>
+      <ul class="nav-center" id="nav-center">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#product-heading">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="cart.html" class="nav-icon">
+          <img class="cart" src="cart4.svg" alt="Cart">
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="checkout-section">
+      <div class="checkout-container">
+
+        <!-- Billing, Shipping, and Payment Form -->
+        <div>
+          <h2>Checkout Details</h2>
+          <form class="checkout-form">
+
+            <!-- Billing Information -->
+            <section>
+              <h2>Billing Information</h2>
+              <div class="form-section">
+                <label for="billing-name">Full Name</label>
+                <input type="text" id="billing-name" required placeholder="John Doe">
+
+                <label for="billing-email">Email</label>
+                <input type="email" id="billing-email" required placeholder="you@example.com">
+
+                <label for="billing-phone">Phone</label>
+                <input type="tel" id="billing-phone" required placeholder="123-456-7890">
+
+                <label for="billing-address">Address</label>
+                <input type="text" id="billing-address" required placeholder="123 Main Street">
+
+                <label for="billing-city">City</label>
+                <input type="text" id="billing-city" required>
+
+                <label for="billing-country">Country</label>
+                <select id="billing-country" required>
+                  <option value="">Select your country</option>
+                  <option value="US">United States</option>
+                  <option value="GB">United Kingdom</option>
+                  <option value="NG">Nigeria</option>
+                  <option value="CA">Canada</option>
+                </select>
+
+                <label for="billing-zip">ZIP / Postal Code</label>
+                <input type="text" id="billing-zip" required>
+              </div>
+            </section>
+
+            <!-- Shipping Information -->
+            <section>
+              <h2>Shipping Information</h2>
+              <div class="form-section">
+                <label><input type="checkbox" id="same-as-billing" checked> Same as billing address</label>
+
+                <div id="shipping-fields">
+                  <label for="shipping-name">Full Name</label>
+                  <input type="text" id="shipping-name" placeholder="John Doe">
+
+                  <label for="shipping-address">Address</label>
+                  <input type="text" id="shipping-address" placeholder="456 Another Street">
+
+                  <label for="shipping-city">City</label>
+                  <input type="text" id="shipping-city">
+
+                  <label for="shipping-country">Country</label>
+                  <select id="shipping-country">
+                    <option value="">Select your country</option>
+                    <option value="US">United States</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="NG">Nigeria</option>
+                    <option value="CA">Canada</option>
+                  </select>
+
+                  <label for="shipping-zip">ZIP / Postal Code</label>
+                  <input type="text" id="shipping-zip">
+                </div>
+              </div>
+            </section>
+
+            <!-- Payment Information -->
+            <section>
+              <h2>Payment Information</h2>
+              <div class="form-section">
+                <label for="card-name">Cardholder Name</label>
+                <input type="text" id="card-name" required placeholder="John Doe">
+
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" required placeholder="1234 5678 9012 3456">
+
+                <label for="expiry">Expiration Date</label>
+                <input type="month" id="expiry" required>
+
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" required placeholder="123">
+              </div>
+            </section>
+          </form>
+        </div>
+
+        <!-- Order Summary -->
+        <div>
+          <h2>Order Summary</h2>
+          <div class="order-summary" id="order-summary">
+            <!-- Dynamic content rendered by JavaScript -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <ul class="social-links">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: support@DynaShop.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Market Street, Toronto, Canada</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 DynaShop. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function updateCartCount() {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const count = cart.reduce((sum, item) => sum + (item.quantity || 1), 0);
+      const cartCountSpan = document.querySelector(".cart-count");
+      if (cartCountSpan) cartCountSpan.textContent = count;
+    }
+
+    function renderOrderSummary() {
+      const orderSummaryDiv = document.getElementById("order-summary");
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      orderSummaryDiv.innerHTML = "";
+
+      let total = 0;
+
+      if (cart.length === 0) {
+        orderSummaryDiv.innerHTML = "<p>Your cart is empty.</p>";
+        return;
+      }
+
+      cart.forEach(item => {
+        const quantity = item.quantity || 1;
+        const subtotal = item.price * quantity;
+        total += subtotal;
+
+        const itemDiv = document.createElement("div");
+        itemDiv.classList.add("summary-item");
+        itemDiv.innerHTML = `<span>${item.title} (x${quantity})</span><span>$${subtotal.toFixed(2)}</span>`;
+        orderSummaryDiv.appendChild(itemDiv);
+      });
+
+      const totalDiv = document.createElement("div");
+      totalDiv.classList.add("summary-total");
+      totalDiv.textContent = "Total: $" + total.toFixed(2);
+      orderSummaryDiv.appendChild(totalDiv);
+
+      const checkoutBtn = document.createElement("button");
+      checkoutBtn.classList.add("place-order-btn");
+      checkoutBtn.textContent = "Place Order";
+      checkoutBtn.addEventListener("click", () => {
+      const form = document.querySelector('.checkout-form')
+        if (!form.checkValidity()) {
+          // This will show the browser's built-in validation messages
+          form.reportValidity();
+          return;
+        }
+        alert("Order placed successfully!");
+        localStorage.removeItem("cart");
+        updateCartCount();
+        renderOrderSummary();
+        });
+
+        orderSummaryDiv.appendChild(checkoutBtn);
+        }
+
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+    document.getElementById('nav-center').classList.toggle('open');
+  });
+
+    renderOrderSummary();
+    updateCartCount();
+  </script>
+</body>
+</html>

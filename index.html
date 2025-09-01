@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DynaShop - Home</title>
+    <link rel="shortcut icon" href="brand-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Left: Logo -->
+            <div class="nav-left">
+                <a href="index.html" class="logo"><img width="100px" src="brand-logo.png" alt=""></a>
+            </div>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+
+            <!-- Center: Main Links -->
+            <ul class="nav-center" id="nav-center">
+                <li><a href="">Home</a></li>
+                <li><a href="#product-heading">Shop</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            
+            <!-- Right: Actions -->
+            <div class="nav-right">
+                <!-- <a href="">create an account</a> -->
+                <form action="">
+                    <input type="text" placeholder="Search" id="searchinput" />
+                </form>
+                <!-- <div id="searchicon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </div> -->
+                <a href="cart.html" class="nav-icon"><img class="cart" src="cart4.svg" alt=""><span class="cart-count">0</span></a>
+                <!-- <div id="notification">Item added to cart!</div> -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       <!-- Hero Carousel -->
+<section class="hero">
+  <div class="carousel">
+    <!-- Slide 1 -->
+    <div class="slide active">
+      <div class="slide-image">
+        <img src="man with shopping bag.png" alt="Great Shopping">
+      </div>
+      <div class="slide-text">
+        <h2>Great Shopping</h2>
+        <p>Find your need now and get discounted.</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+      <div class="slide-image">
+        <img src="lady_transparent.png" alt="New Product Sales">
+      </div>
+      <div class="slide-text">
+        <h2>New Product Sales</h2>
+        <p>Find your need now and get discounted.</p>
+        <a href="#" class="btn">Discover</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+      <div class="slide-image">
+        <img src="lady_transparent.png" alt="Fashion Collections">
+      </div>
+      <div class="slide-text">
+        <h2>Fashion Collections</h2>
+        <p>Summer Sales</p>
+        <a href="/fashion" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+  </div>
+</section>
+
+        <section>
+            <h1 id="product-heading" class="product-heading">Shop</h1>
+            <p class="category-indicator">Category: All</p>
+            <div id="product-list" class="product-section"></div>
+
+            <!-- Pagination controls -->
+            <div id="pagination" class="pagination"></div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div id="featured-list" class="product-grid"></div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories">
+            <h2>Shop by Category</h2>
+            <div id="category-filters">
+                <button class="category-btn" data-category="all">All</button>
+                <button class="category-btn" data-category="men's clothing">Men's Clothing</button>
+                <button class="category-btn" data-category="women's clothing">Women's Clothing</button>
+                <button class="category-btn" data-category="electronics">Electronics</button>
+                <button class="category-btn" data-category="jewelery">Jewelery</button>
+            </div>
+
+        </section>
+
+        <!-- Black Friday Banner -->
+        <section class="black_friday">
+            <div class="black-friday-container">
+                <div class="black-friday-image">
+                    <img src="lady_transparent.png" alt="Black Friday Sale">
+                </div>
+                <div class="black-friday-text">
+                    <h1>BLACK FRIDAY</h1>
+                    <h3>SUPER SALE</h3>
+                    <a href="#" class="btn">Shop Deals</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@DynaShop.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Market Street, Toronto, Canada</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 DynaShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
