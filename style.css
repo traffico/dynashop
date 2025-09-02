@@ -726,12 +726,12 @@ a {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .nav-center {
     display: none;
   }
   
-}
+} */
 
 /* ===== Featured Products ===== */
 .featured-products {
@@ -808,13 +808,23 @@ a {
   cursor: pointer;
 }
 
+@media (max-width: 450px) {
+  #searchinput{
+    /* background-color: red; */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 63px;
+  }
+}
+
 /* Responsive behavior */
 @media (max-width: 768px) {
   .nav-center {
-    /* display: none; */
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 68px;
     left: 0;
     background-color: rgb(255, 254, 254);
     width: 100%;
